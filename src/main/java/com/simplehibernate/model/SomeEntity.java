@@ -19,6 +19,7 @@ public class SomeEntity {
 	private Integer id;
 
 	// @CollectionOfElements
+	//TODO some comments
 	@ElementCollection(targetClass = String.class)
 	@CollectionTable(name = "UserFilter_orgUnits", joinColumns = @JoinColumn(name = "UserFilter_FILTER_ID"))
 	@Column(columnDefinition = "varchar(255)", name = "element")
